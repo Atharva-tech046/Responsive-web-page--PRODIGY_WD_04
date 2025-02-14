@@ -1,0 +1,124 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+header {
+    background: #ff6600;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: black;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #ff6600, black);
+}
+
+.hover-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background: white;
+    color: #ff6600;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hover-button:hover {
+    background: #ff6600;
+    color: white;
+}
+
+.shop, .colors {
+    padding: 50px 20px;
+}
+
+.watch-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.watch-item {
+    background: #222;
+    padding: 20px;
+    border-radius: 5px;
+    color: #ff6600;
+    font-weight: bold;
+}
+
+.color-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.color-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.Tiffany{ background: rgb(40, 57, 95); }
+.Daytona{ background: rgb(229, 229, 223); }
+.black{ background: rgb(33, 32, 32); }
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background: #ff6600;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-links.show {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+    }
+}
